@@ -1,0 +1,9 @@
+<div class="book-card">
+  <div class="book-card-price text-light">${{ price | number: "1.2-2" }}</div>
+  <div class="book-card-img-container">
+    <img src="{{ img_url }}" alt="{{ name }}" class="book-card-img" />
+  </div>
+  <h6 class="book-card-title">{{ name }}</h6>
+  <p class="book-card-date">{{ publication_date }}</p>
+  <like></like>
+</div>

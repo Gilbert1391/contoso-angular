@@ -1,0 +1,5 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8f9fa;
+}

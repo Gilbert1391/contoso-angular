@@ -1,0 +1,131 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  <div class="row">
+    <div class="col form-group">
+      <label for="name">Book name</label>
+      <input
+        ngModel
+        #bookName="ngModel"
+        type="text"
+        class="form-control"
+        name="name"
+        id="name"
+        placeholder="Book name"
+        required
+      />
+      <div
+        class="alert alert-danger"
+        *ngIf="bookName.invalid && bookName.touched"
+      >
+        Book name is required
+      </div>
+    </div>
+    <div class="col form-group">
+      <label for="author">Author</label>
+      <input
+        ngModel
+        #author="ngModel"
+        type="text"
+        class="form-control"
+        name="author"
+        id="author"
+        placeholder="Author"
+        required
+      />
+      <div class="alert alert-danger" *ngIf="author.invalid && author.touched">
+        Author name is required
+      </div>
+    </div>
+
+    <div class="col form-group">
+      <label for="price">Price</label>
+      <input
+        ngModel
+        #price="ngModel"
+        type="number"
+        class="form-control"
+        name="price"
+        id="price"
+        placeholder="Price"
+        required
+      />
+      <div class="alert alert-danger" *ngIf="price.invalid && price.touched">
+        Price is required
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col form-group">
+      <label for="img_url">Image URL</label>
+      <input
+        ngModel
+        #img_url="ngModel"
+        type="text"
+        class="form-control"
+        name="img_url"
+        id="img_url"
+        placeholder="Image URL"
+        required
+      />
+      <div
+        class="alert alert-danger"
+        *ngIf="img_url.invalid && img_url.touched"
+      >
+        Image URL is required
+      </div>
+    </div>
+
+    <div class="col-4 form-group">
+      <label for="publication_date">Publication date</label>
+      <input
+        ngModel
+        #date="ngModel"
+        type="date"
+        class="form-control"
+        name="publication_date"
+        id="publication_date"
+        required
+      />
+      <div class="alert alert-danger" *ngIf="date.invalid && date.touched">
+        Publication date is required
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea
+      ngModel
+      #description="ngModel"
+      class="form-control"
+      name="description"
+      id="description"
+      placeholder="Description..."
+      rows="4"
+      required
+    ></textarea>
+    <div
+      class="alert alert-danger"
+      *ngIf="description.invalid && description.touched"
+    >
+      Description is required
+    </div>
+  </div>
+  <button
+    [disabled]="form.invalid"
+    class="btn"
+    [class.btn-primary]="!isSubmitted"
+    [class.btn-success]="isSubmitted"
+  >
+    <span *ngIf="!isSubmitted && !loading">Submit</span>
+    <span *ngIf="isSubmitted && !loading">Submitted</span>
+    <span
+      *ngIf="loading"
+      class="spinner-border spinner-border-sm"
+      role="status"
+      aria-hidden="true"
+      role="status"
+      aria-hidden="true"
+    ></span>
+  </button>
+</form>

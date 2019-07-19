@@ -1,0 +1,9 @@
+<div class="grid">
+  <book-card
+    *ngFor="let book of books"
+    [price]="book.price"
+    [name]="book.name"
+    [img_url]="book.img_url"
+    [publication_date]="book.publication_date"
+  ></book-card>
+</div>

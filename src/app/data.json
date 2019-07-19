@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "The Eighth Sister: A Thriller",
+    "author": "Robert Dugoni",
+    "img_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1538808531l/40207839._SY475_.jpg",
+    "price": 6.99,
+    "publication_date": "Apr 9, 2019",
+    "description": "Former CIA case officer Charles Jenkins is a man at a crossroads: in his early sixties, he has a family, a new baby on the way, and a security consulting business on the brink of bankruptcy. Then his former bureau chief shows up at his house with a risky new assignment: travel undercover to Moscow and locate a Russian agent believed to be killing members of a clandestine US spy cell known as the seven sisters"
+  },
+  {
+    "id": 2,
+    "name": "Sorcery of Thorns",
+    "author": "Margaret Rogerson",
+    "img_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1541621322l/42201395.jpg",
+    "price": 12.32,
+    "publication_date": "Jun 4, 2019",
+    "description": "All sorcerers are evil. Elisabeth has known that as long as she has known anything. Raised as a foundling in one of Austermeer’s Great Libraries, Elisabeth has grown up among the tools of sorcery—magical grimoires that whisper on shelves and rattle beneath iron chains. If provoked, they transform into grotesque monsters of ink and leather. She hopes to become a warden, charged with protecting the kingdom from their power"
+  },
+  {
+    "id": 3,
+    "name": "Wicked Fox",
+    "author": "Kat Cho",
+    "img_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1561485441l/42133479._SX318_.jpg",
+    "price": 13.39,
+    "publication_date": "Jun 25, 2019",
+    "description": "Eighteen-year-old Gu Miyoung has a secret--she's a gumiho, a nine-tailed fox who must devour the energy of men in order to survive. Because so few believe in the old tales anymore, and with so many evil men no one will miss, the modern city of Seoul is the perfect place to hide and hunt"
+  },
+  {
+    "id": 4,
+    "name": "Magic for Liars",
+    "author": "Sarah Gailey",
+    "img_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1537942213l/34594037._SY475_.jpg",
+    "price": 17.1,
+    "publication_date": "Jun 4, 2019",
+    "description": "Ivy Gamble has never wanted to be magic. She is perfectly happy with her life—she has an almost-sustainable career as a private investigator, and an empty apartment, and a slight drinking problem. It's a great life and she doesn't wish she was like her estranged sister, the magically gifted professor Tabitha"
+  },
+  {
+    "id": 5,
+    "name": "Storm and Fury",
+    "author": "Jennifer L. Armentrout",
+    "img_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1540397329l/40291564.jpg",
+    "price": 13.39,
+    "publication_date": "Jun 11, 2019",
+    "description": "Eighteen-year-old Trinity Marrow may be going blind, but she can see and communicate with ghosts and spirits. Her unique gift is part of a secret so dangerous that she’s been in hiding for years in an isolated compound fiercely guarded by Wardens—gargoyle shape-shifters who protect humankind from demons. If the demons discover the truth about Trinity, they’ll devour her, flesh and bone, to enhance their own powers"
+  },
+  {
+    "id": 6,
+    "name": "The Beholder",
+    "author": "Anna Bright",
+    "img_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1538661449l/36558159._SY475_.jpg",
+    "price": 11.0,
+    "publication_date": "Jun 4, 2019",
+    "description": "Selah has waited her whole life for a happily ever after. As the only daughter of the leader of Potomac, she knows her duty is to find the perfect match, a partner who will help secure the future of her people. Now that day has finally come"
+  }
+]
