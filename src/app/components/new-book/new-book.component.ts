@@ -15,37 +15,39 @@ export class NewBookComponent implements OnInit {
   ngOnInit() {}
 
   async onSubmit(form): Promise<void> {
-    const {
-      name,
-      author,
-      img_url,
-      price,
-      description,
-      publication_date
-    }: BookInterface = form.value;
+    if (!this.isSubmitted) {
+      const {
+        name,
+        author,
+        img_url,
+        price,
+        description,
+        publication_date
+      }: BookInterface = form.value;
 
-    const books = this.booksService.getBooks();
-    const id = books.length + 1;
-    this.loading = true;
-    console.log("Resolving promise...");
-    await new Promise((resolve, reject) => {
-      setTimeout(() => {
-        this.loading = false;
-        resolve();
-      }, 1500);
-    });
-    console.log("Promise Resolved");
+      const books = this.booksService.getBooks();
+      const id = books.length + 1;
+      this.loading = true;
 
-    books.push({
-      id,
-      name,
-      author,
-      img_url,
-      price,
-      description,
-      publication_date
-    });
+      console.log("Resolving promise...");
+      await new Promise((resolve, reject) => {
+        setTimeout(() => {
+          this.loading = false;
+          resolve();
+        }, 1500);
+      });
+      console.log("Promise Resolved");
 
+      books.push({
+        id,
+        name,
+        author,
+        img_url,
+        price,
+        description,
+        publication_date
+      });
+    }
     this.isSubmitted = true;
   }
 }
